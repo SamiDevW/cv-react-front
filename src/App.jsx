@@ -12,7 +12,7 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route
-						path='/'
+						path=''
 						element={<Home />}
 					></Route>
 					<Route
