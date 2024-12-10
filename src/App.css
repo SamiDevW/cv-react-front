@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgba(9, 10, 17, .8);
+    color: white;
+}
+
+h1,
+h2 {
+    color: #FFA53F;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
