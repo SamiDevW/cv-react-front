@@ -4,7 +4,7 @@ import Admin from "./pages/Admin";
 import "./css/custom.css";
 import "./App.css";
 import ErrorPage from "./pages/ErrorPage";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 
 function App() {
 	return (
