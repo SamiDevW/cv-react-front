@@ -5,7 +5,7 @@ export default function Skills() {
 	const [skills, setSkills] = useState("");
 	async function fetchSkills() {
 		try {
-			const response = await fetch(url + "competence");
+			const response = await fetch(url + "skill");
 			if (response.ok) {
 				const data = await response.json();
 				setSkills(data);

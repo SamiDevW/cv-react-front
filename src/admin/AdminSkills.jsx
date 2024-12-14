@@ -11,7 +11,7 @@ export default function AdminSkills() {
 	const [isAdd, setIsAdd] = useState(false);
 	async function fetchSkills() {
 		try {
-			const response = await fetch(url + "competence");
+			const response = await fetch(url + "skill");
 			if (response.ok) {
 				const data = await response.json();
 				setSkills(data);
@@ -28,7 +28,7 @@ export default function AdminSkills() {
 		try {
 			if (skill !== "") {
 				console.log(skill);
-				const response = await fetch(url + "competence", {
+				const response = await fetch(url + "skill", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",
@@ -47,7 +47,7 @@ export default function AdminSkills() {
 	}
 	// Delete
 	async function handleDelete(id) {
-		const response = await fetch(url + "competence" + `/${id}`, {
+		const response = await fetch(url + "skill" + `/${id}`, {
 			method: "DELETE",
 		});
 		if (response.ok) {
